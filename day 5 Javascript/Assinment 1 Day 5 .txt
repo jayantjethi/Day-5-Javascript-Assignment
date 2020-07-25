@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cubes Of Odd Number</title>
+</head>
+<body>
+    
+<script>
+var arr = [];
+function cubesOdd (...arr){
+    for(var i = 0 ; i<arr.length ; i++)
+    {
+        if(arr[i]>0)
+        {
+            var cube = arr.filter(el => el%2 !=0).map(el => el**3);
+        }
+        else
+        {
+            console.log("Enter Positive Number");
+        }
+    }
+   console.log(cube);
+}
+cubesOdd(1,2,3,4,5,6);   
+cubesOdd(1,2,-3);
+
+</script>
+</body>
+</html>
